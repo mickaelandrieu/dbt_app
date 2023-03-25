@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: my_app
+    description: Our PostgreSQL Database
+    database: my_app
+    schema: public
+
+    tables:
+      - name: users
+        columns:
+          - name: id
+          - name: name
+          - name: city_code
+
+      - name: cities
+        columns:
+          - name: city_code
+          - name: city
+          - name: country
+  
